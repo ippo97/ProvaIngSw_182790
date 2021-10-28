@@ -7,7 +7,7 @@ import java.util.List;
 
 public class MyListUtil {
 
-	public static void main(String[] args) {
+	public void main(String[] args) {
 		List<Integer> numeri = new ArrayList<Integer>();
 		numeri.add(10);
 		numeri.add(8);
@@ -18,11 +18,11 @@ public class MyListUtil {
 		System.out.println(s);
 
 	}
+	
+	public MyListUtil() {}
 
-	public static List<Integer> sort(List<Integer> list, int order) {
+	public List<Integer> sort(List<Integer> list, int order) {
 
-		if(list.isEmpty())
-			return null;
 		
 		if (order == 0) {
 			Collections.sort(list);
